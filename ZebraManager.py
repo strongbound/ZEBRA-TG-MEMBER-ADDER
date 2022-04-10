@@ -67,7 +67,7 @@ while True:
             clr()
             print(f'\n{gr} [*] Logging in from new accounts\n')
             for number in new_accs:
-                c = TelegramClient(f'sessions/{number}', 8088717 , '7d1e0295ee1c2628f1933e9ffd2d8b78')
+                c = TelegramClient(f'sessions/{number}', 19918413 , '53437540cac23329e9ab267c3923127e')
                 c.start(number)
                 print(f'{ye}[+] 𝐋𝐨𝐠𝐢𝐧 𝐬𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮L')
                 c.disconnect()
@@ -90,7 +90,7 @@ while True:
         else:
             for account in accounts:
                 phone = str(account[0])
-                client = TelegramClient(f'sessions/{phone}', 11279225 , '47fd121660e3316525c7b369f2e97b85')
+                client = TelegramClient(f'sessions/{phone}', 19918413 , '53437540cac23329e9ab267c3923127e')
                 client.connect()
                 if not client.is_user_authorized():
                     try:
@@ -143,11 +143,11 @@ while True:
         input(f'\nPress enter to goto main menu...')
         f.close()
     elif a == 4:
-        # thanks to github.com/krish775 for the snippet below
+        
         print(f'\n{lg}[i] Checking for updates...')
         try:
-            # https://raw.githubusercontent.com/krish775/Rex-TG-Member-Adder/main/version.txt
-            version = requests.get('https://raw.githubusercontent.com/krish775/Rex-TG-Member-Adder/main/version.txt')
+            
+            version = requests.get('https://github.com/Sumit9969/ZEBRA-TG-MEMBER-ADDER/main/version.txt')
         except:
             print(f'{r} You are not connected to the internet')
             print(f'{r} Please connect to the internet and retry')
@@ -163,8 +163,8 @@ while True:
                     os.system('rm ZebraAdder.py')
                     os.system('rm ZebraManager.py')
                 #os.system('del scraper.py')
-                os.system('curl -l -O https://raw.githubusercontent.com/krish775/Rex-TG-Member-Adder/main/ZevraAdder.py')
-                os.system('curl -l -O https://raw.githubusercontent.com/krish775/Rex-TG-Member-Adder/main/ZebraManager.py')
+                os.system('curl -l -O https://SumitYadav.githubusercontent.com/Sumit9969/ZEBRA-TG-MEMBER-ADDER/main/ZebraAdder.py')
+                os.system('curl -l -O https://SumitYadav.githubusercontent.com/Sumit9969/ZEBRA-TG-MEMBER-ADDER/main/ZebraManager.py')
                 print(f'{gr}[*] Updated to version: {version.text}')
                 input('Press enter to exit...')
                 exit()
