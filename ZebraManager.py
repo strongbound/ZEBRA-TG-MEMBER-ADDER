@@ -25,20 +25,20 @@ def banner():
     import random
     # fancy logo
     b = [
-  
+    
 
-  
-    ' ███████╗███████╗██████╗░██████╗░░█████╗░ ' ,
-     '╚════██║██╔════╝██╔══██╗██╔══██╗██╔══██╗ ' ,
-     ' ░░███╔═╝█████╗░░██████╦╝██████╔╝███████║ ' ,
-     ' ██╔══╝░░██╔══╝░░██╔══██╗██╔══██╗██╔══██║ ' ,
-     ' ███████╗███████╗██████╦╝██║░░██║██║░░██║ ' ,
-     ' ╚══════╝╚══════╝╚═════╝░╚═╝░░╚═╝╚═╝░░╚═╝ ' ,
+   ' ██████╗░███████╗██╗░░██╗ ',
+   ' ██╔══██╗██╔════╝╚██╗██╔╝ ',
+   ' ██████╔╝█████╗░░░╚███╔╝░ ',
+   ' ██╔══██╗██╔══╝░░░██╔██╗░ ',
+   ' ██║░░██║███████╗██╔╝╚██╗ ',
+   ' ╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝ ',
+
     ]
     for char in b:
         print(f'{random.choice(colors)}{char}{n}')
-    #print('=============DEMON OF GOD==============')
-    print(f'   Version: 1.0 | Author: ZEBRA{n}\n')
+    #print('=============SON OF GOD==============')
+    print(f'   Version: 1.0 | Author: REX{n}\n')
 
 def clr():
     if os.name == 'nt':
@@ -49,12 +49,12 @@ def clr():
 while True:
     clr()
     banner()
-    print(lg+'[1] ᴀᴅᴅ ɴᴇᴡ ᴀᴄᴄᴏᴜɴᴛs'+n)
-    print(lg+'[2] ғɪʟᴛᴇʀ ᴀʟʟ ʙᴀɴɴᴇᴅ ᴀᴄᴄᴏᴜɴᴛs'+n)
-    print(lg+'[3] ᴅᴇʟᴇᴛᴇ sᴘᴇᴄɪғɪᴄ ᴀᴄᴄᴏᴜɴᴛs'+n)
-    print(lg+'[4] ᴜᴘᴅᴀᴛᴇ ʏᴏᴜʀ sᴄʀɪᴘᴛ'+n)
-    print(lg+'[5] ᴇxɪᴛ'+n)
-    a = int(input('\nᴇɴᴛᴇʀ ʏᴏᴜʀ ᴄʜᴏɪᴄᴇ: '))
+    print(lg+'[1] Add New Accounts'+n)
+    print(lg+'[2] Filter All Banned Accounts'+n)
+    print(lg+'[3] Delete specific accounts'+n)
+    print(lg+'[4] Update your Script'+n)
+    print(lg+'[5] Exit'+n)
+    a = int(input('\nEnter Your Choice: '))
     if a == 1:
         new_accs = []
         with open('vars.txt', 'ab') as g:
@@ -68,9 +68,9 @@ while True:
             clr()
             print(f'\n{gr} [*] Logging in from new accounts\n')
             for number in new_accs:
-                c = TelegramClient(f'sessions/{number}', 11279225 , '47fd121660e3316525c7b369f2e97b85')
+                c = TelegramClient(f'sessions/{number}', 8088717 , '7d1e0295ee1c2628f1933e9ffd2d8b78')
                 c.start(number)
-                print(f'{ye}[+] ᒪOᘜIᑎ ՏᑌՏᑕᗴՏՏᖴᑌᒪᒪ')
+                print(f'{ye}[+] 𝐋𝐨𝐠𝐢𝐧 𝐬𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮L')
                 c.disconnect()
             input(f'\n Press enter to goto main menu...')
 
@@ -91,7 +91,7 @@ while True:
         else:
             for account in accounts:
                 phone = str(account[0])
-                client = TelegramClient(f'sessions/{phone}', 11279225 , '47fd121660e3316525c7b369f2e97b85')
+                client = TelegramClient(f'sessions/{phone}', 8088717 , '7d1e0295ee1c2628f1933e9ffd2d8b78')
                 client.connect()
                 if not client.is_user_authorized():
                     try:
@@ -144,11 +144,11 @@ while True:
         input(f'\nPress enter to goto main menu...')
         f.close()
     elif a == 4:
-        # thanks to github.com/Sumit9969 for the snippet below
+        # thanks to github.com/krish775 for the snippet below
         print(f'\n{lg}[i] Checking for updates...')
         try:
-            # https://github.com/Sumit9969/ZEBRA-TG-MEMBER-ADDER
-            version = requests.get('https://github.com/Sumit9969/ZEBRA-TG-MEMBER-ADDER/main/version.txt')
+            # https://raw.githubusercontent.com/krish775/Rex-TG-Member-Adder/main/version.txt
+            version = requests.get('https://raw.githubusercontent.com/krish775/Rex-TG-Member-Adder/main/version.txt')
         except:
             print(f'{r} You are not connected to the internet')
             print(f'{r} Please connect to the internet and retry')
@@ -158,14 +158,14 @@ while True:
             if prompt == 'y' or prompt == 'yes' or prompt == 'Y':
                 print(f'{lg}[i] Downloading updates...')
                 if os.name == 'nt':
-                    os.system('del ZebraAdder.py')
-                    os.system('del ZebraManager.py')
+                    os.system('del rexadder.py')
+                    os.system('del rexmanager.py')
                 else:
-                    os.system('rm ZebraAdder.py')
-                    os.system('rm ZebraManager.py')
+                    os.system('rm rexadder.py')
+                    os.system('rm rexmanager.py')
                 #os.system('del scraper.py')
-                os.system('curl -l -O https://Zebra.githubusercontent.com/Sumit9969/ZEBRA-TG-MEMBER-ADDER/main/ZebraAdder.py')
-                os.system('curl -l -O https://Zebra.githubusercontent.com/Sumit9969/ZEBRA-TG-MEMBER-ADDER/main/ZebraManager.py')
+                os.system('curl -l -O https://raw.githubusercontent.com/krish775/Rex-TG-Member-Adder/main/rexadder.py')
+                os.system('curl -l -O https://raw.githubusercontent.com/krish775/Rex-TG-Member-Adder/main/rexmanager.py')
                 print(f'{gr}[*] Updated to version: {version.text}')
                 input('Press enter to exit...')
                 exit()
