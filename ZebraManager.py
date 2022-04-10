@@ -26,11 +26,18 @@ def banner():
     # fancy logo
     b = [
 
+     ' ███████╗███████╗██████╗░██████╗░░█████╗░ ' ,
+     '╚════██║██╔════╝██╔══██╗██╔══██╗██╔══██╗ ' ,
+     ' ░░███╔═╝█████╗░░██████╦╝██████╔╝███████║ ' ,
+     ' ██╔══╝░░██╔══╝░░██╔══██╗██╔══██╗██╔══██║ ' ,
+     ' ███████╗███████╗██████╦╝██║░░██║██║░░██║ ' ,
+     ' ╚══════╝╚══════╝╚═════╝░╚═╝░░╚═╝╚═╝░░╚═╝ ' ,
+
     ]
     for char in b:
         print(f'{random.choice(colors)}{char}{n}')
     #print('=============SON OF GOD==============')
-    print(f'   Version: 1.0 | Author: REX{n}\n')
+    print(f'   Version: 1.0 | Author: ZEBRA{n}\n')
 
 def clr():
     if os.name == 'nt':
@@ -150,14 +157,14 @@ while True:
             if prompt == 'y' or prompt == 'yes' or prompt == 'Y':
                 print(f'{lg}[i] Downloading updates...')
                 if os.name == 'nt':
-                    os.system('del rexadder.py')
-                    os.system('del rexmanager.py')
+                    os.system('del ZebraAdder.py')
+                    os.system('del ZebraManager.py')
                 else:
-                    os.system('rm rexadder.py')
-                    os.system('rm rexmanager.py')
+                    os.system('rm ZebraAdder.py')
+                    os.system('rm ZebraManager.py')
                 #os.system('del scraper.py')
-                os.system('curl -l -O https://raw.githubusercontent.com/krish775/Rex-TG-Member-Adder/main/rexadder.py')
-                os.system('curl -l -O https://raw.githubusercontent.com/krish775/Rex-TG-Member-Adder/main/rexmanager.py')
+                os.system('curl -l -O https://raw.githubusercontent.com/krish775/Rex-TG-Member-Adder/main/ZevraAdder.py')
+                os.system('curl -l -O https://raw.githubusercontent.com/krish775/Rex-TG-Member-Adder/main/ZebraManager.py')
                 print(f'{gr}[*] Updated to version: {version.text}')
                 input('Press enter to exit...')
                 exit()
