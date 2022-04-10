@@ -36,7 +36,7 @@ def banner():
     ]
     for char in b:
         print(f'{random.choice(colors)}{char}{n}')
-    #print('=============SON OF GOD==============')
+    #print('=============DEMON OF GOD==============')
     print(f'   Version: 1.0 | Author: ZEBRA{n}\n')
 
 def clr():
@@ -90,7 +90,7 @@ while True:
         else:
             for account in accounts:
                 phone = str(account[0])
-                client = TelegramClient(f'sessions/{phone}', 8088717 , '7d1e0295ee1c2628f1933e9ffd2d8b78')
+                client = TelegramClient(f'sessions/{phone}', 11279225 , '47fd121660e3316525c7b369f2e97b85')
                 client.connect()
                 if not client.is_user_authorized():
                     try:
